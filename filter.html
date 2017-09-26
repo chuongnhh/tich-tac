@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tích tắc</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+   					<span class="sr-only">Toggle navigation</span>
+   					<span class="icon-bar"></span>
+   					<span class="icon-bar"></span>
+   					<span class="icon-bar"></span>
+   				</button>
+                <a class="navbar-brand" href="/filter.html"><i class="glyphicon glyphicon-home"></i> Tích tắc</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/filter.html">Lọc data</a></li>
+                    <li><a href="/salary.html">Tính lương</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">chuongnh.hcm@gmail.com <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Đổi mật khẩu</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Lọc data</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Vui lòng chọn tệp rồi chờ tải tệp lên trước, sau đó nhấn nút tải về.</h4>
+                <hr />
+                <form id="uploadForm" enctype="multipart/form-data" action="upload" method="post" class="form-inline">
+                    <div class="form-group">
+                        <input type="file" class="form-control" name="file">
+                    </div>
+                    <button type="submit" class="btn btn-default" value="Upload" name="submit">
+                        <i class="glyphicon glyphicon-download"></i> Tải về
+                    </button>
+                </form>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <dl>
+                    <dd>
+                        <p>Tổng số dòng trên tệp: <b id="file-rows" class="label label-primary"> Chưa biết</b> dòng</p>
+                    </dd>
+                    <dd>
+                        <p>Vui lòng xem hướng dẫn nếu chưa biết: <a target="_blank" href="https://youtu.be/1m_9z7Kxhko">https://youtu.be/1m_9z7Kxhko</a>.</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+     <div class="container">
+        <hr />
+        <footer>
+            Copyright &copy; 2017 - <a href="https://www.facebook.com/chuongnh.hcm" target="_blank">Nguyen Hoang Chuong</a>. All right reserved.
+        </footer>
+    </div>
+
+</body>
+
+</html>
